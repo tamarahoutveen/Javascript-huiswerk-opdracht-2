@@ -64,7 +64,7 @@ for (let i = 0; i < birthYears.length; i++) {
 const leaveHours = [6, 9, 2, 7, 3];
 
 for (let i = 0; i < leaveHours.length ; i++) {
-    if(leaveHours[i]%2==0){
+    if(leaveHours[i]%2 === 0){
         console.log("Even uren, dus vermenigvuldigd met 2:",leaveHours[i]*2);
     }
     else{
