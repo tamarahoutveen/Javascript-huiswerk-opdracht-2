@@ -13,6 +13,9 @@
 
 const meetingTimes = ['09:00', '10:30', '14:00', '15:30', '17:00'];
 
+for (let i = 0; i < meetingTimes.length ; i++) {
+    console.log("Vergadering om",meetingTimes[i]);
+}
 
 // ==========================================
 // Opdracht 2. In tegenstelling tot Bob, werken de andere medewerkers van Loop-it Solutions wél hard.
@@ -27,6 +30,10 @@ const meetingTimes = ['09:00', '10:30', '14:00', '15:30', '17:00'];
 
 const salaries = [3200, 2350, 2800, 3500, 2800];
 
+for (let i = 0; i < salaries.length; i++) {
+    let payRaise = salaries[i]/100*105;
+    console.log("Salaris voor verhoging: €"+salaries[i],"en na verhoging: €"+payRaise);
+}
 
 // ==========================================
 // Opdracht 3. Eén van Bob's taken is medewerkers feliciteren met hun "zoveelste" verjaardag.
@@ -39,6 +46,10 @@ const salaries = [3200, 2350, 2800, 3500, 2800];
 
 const birthYears = [1995, 1997, 1990, 2003, 1982];
 
+for (let i = 0; i < birthYears.length; i++) {
+    let birthYearCalculator = 2025 - birthYears[i];
+    console.log("De leeftijd is:",birthYearCalculator);
+}
 
 // ==========================================
 // Opdracht 4. Bob houdt bij hoeveel verlofuren medewerkers per maand opnemen. Nu wil hij voor het nieuwe jaar een bonusstructuur toepassen:
@@ -52,7 +63,14 @@ const birthYears = [1995, 1997, 1990, 2003, 1982];
 
 const leaveHours = [6, 9, 2, 7, 3];
 
-
+for (let i = 0; i < leaveHours.length ; i++) {
+    if(leaveHours[i]%2 === 0){
+        console.log("Even uren, dus vermenigvuldigd met 2:",leaveHours[i]*2);
+    }
+    else{
+        console.log("Oneven uren, dus vermenigvuldigd met 0.5",leaveHours[i]*0.5);
+    }
+}
 // ==========================================
 // Opdracht 5 (BONUS). Na een dag bij Loop-it Solutions zit je er lekker in, tot je beseft dat één van de machines de
 // productiecodes verkeerd genereert en Bob deze altijd met de hand verbetert. Geen wonder dat er zo weinig werk verzet wordt...
@@ -69,4 +87,7 @@ const leaveHours = [6, 9, 2, 7, 3];
 
 const productionCodes = [" abC123  ", "  DEF456", "ghi789  ", "JKL012"];
 
-
+for (let i = 0; i < productionCodes.length; i++) {
+    let correctedProductionCode = productionCodes[i].toUpperCase().trim();
+    console.log(correctedProductionCode);
+}
